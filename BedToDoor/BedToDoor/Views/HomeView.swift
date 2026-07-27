@@ -20,13 +20,11 @@ struct HomeView: View {
         return min(1.0, Double(todaySteps) / Double(todayGoal))
     }
 
-    private var todaysCompletedExerciseIds: Set<String> {
-        let startOfDay = Calendar.current.startOfDay(for: .now)
-        return Set(
-            logEntries
-                .filter { Calendar.current.isDate($0.date, inSameDayAs: startOfDay) && $0.completed }
-                .map(\.exerciseId)
-        )
+    private func completionsToday(for exercise: Exercise) -> Int {
+        let today = Calendar.current.startOfDay(for: .now)
+        return logEntries.filter {
+            $0.exerciseId == exercise.id && Calendar.current.isDate($0.completedAt, inSameDayAs: today)
+        }.count
     }
 
     var body: some View {
@@ -80,19 +78,22 @@ struct HomeView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(exercise.name)
-                        Text("\(exercise.targetReps) reps")
+                        let done = completionsToday(for: exercise)
+                        Text("\(exercise.targetReps) reps · \(done)/\(exercise.timesPerDay) today")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
                     Spacer()
-                    let done = todaysCompletedExerciseIds.contains(exercise.id)
+                    let done = completionsToday(for: exercise)
+                    let isComplete = done >= exercise.timesPerDay
                     Button {
-                        toggleExercise(exercise, isDone: !done)
+                        logOne(for: exercise)
                     } label: {
-                        Image(systemName: done ? "checkmark.circle.fill" : "circle")
+                        Image(systemName: isComplete ? "checkmark.circle.fill" : "circle")
                             .font(.title2)
                     }
                     .buttonStyle(.plain)
+                    .disabled(isComplete)
                 }
             }
         }
@@ -100,15 +101,8 @@ struct HomeView: View {
         .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 16))
     }
 
-    private func toggleExercise(_ exercise: Exercise, isDone: Bool) {
-        let today = Calendar.current.startOfDay(for: .now)
-        if let existing = logEntries.first(where: {
-            $0.exerciseId == exercise.id && Calendar.current.isDate($0.date, inSameDayAs: today)
-        }) {
-            existing.completed = isDone
-        } else {
-            modelContext.insert(ExerciseLogEntry(date: today, exerciseId: exercise.id, completed: isDone))
-        }
+    private func logOne(for exercise: Exercise) {
+        modelContext.insert(ExerciseLogEntry(exerciseId: exercise.id, completedAt: .now))
     }
 
     private func refreshSteps() async {

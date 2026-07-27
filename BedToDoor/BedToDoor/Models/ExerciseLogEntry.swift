@@ -1,18 +1,19 @@
 import Foundation
 import SwiftData
 
-/// A manual "I did it" log entry for one exercise on one day. Unlike
-/// steps, there is no HealthKit-backed source of truth for this, so it
-/// lives entirely in the app's local store.
+/// One manual "I did it" completion of one exercise. Since an exercise
+/// can be prescribed multiple times a day, this is a log of individual
+/// occurrences rather than a single done/not-done flag per day — the
+/// count of same-day entries for an exercise is how many times it's
+/// been done today. Unlike steps, there is no HealthKit-backed source
+/// of truth for this, so it lives entirely in the app's local store.
 @Model
 final class ExerciseLogEntry {
-    var date: Date
     var exerciseId: String
-    var completed: Bool
+    var completedAt: Date
 
-    init(date: Date, exerciseId: String, completed: Bool = true) {
-        self.date = date
+    init(exerciseId: String, completedAt: Date = .now) {
         self.exerciseId = exerciseId
-        self.completed = completed
+        self.completedAt = completedAt
     }
 }

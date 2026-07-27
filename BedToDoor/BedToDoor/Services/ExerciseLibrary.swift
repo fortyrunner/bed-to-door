@@ -7,36 +7,41 @@ import SwiftData
 /// chair or wall for balance, using a can of food or bottle of water
 /// in place of a dumbbell. No equipment to buy.
 enum ExerciseLibrary {
-    static let starterSet: [(id: String, name: String, instructions: String, targetReps: Int)] = [
+    static let starterSet: [(id: String, name: String, instructions: String, targetReps: Int, timesPerDay: Int)] = [
         (
             id: "chair_stand",
             name: "Chair Stand",
             instructions: "Sit toward the front of a sturdy chair. Stand up, using your arms for support if you need to, then sit back down slowly. That's one rep.",
-            targetReps: 2
+            targetReps: 2,
+            timesPerDay: 1
         ),
         (
             id: "seated_march",
             name: "Seated March",
             instructions: "Sit tall in a chair. Lift one knee, lower it, then lift the other. That's one rep.",
-            targetReps: 4
+            targetReps: 4,
+            timesPerDay: 1
         ),
         (
             id: "wall_pushup",
             name: "Wall Push-Up",
             instructions: "Stand facing a wall, hands flat against it at shoulder height. Bend your elbows to bring your chest toward the wall, then push back. That's one rep.",
-            targetReps: 2
+            targetReps: 2,
+            timesPerDay: 1
         ),
         (
             id: "can_curl",
             name: "Can or Bottle Curl",
             instructions: "Hold a can of food or a bottle of water in each hand. With arms at your sides, bend your elbows to bring your hands toward your shoulders, then lower slowly. That's one rep.",
-            targetReps: 4
+            targetReps: 4,
+            timesPerDay: 1
         ),
         (
             id: "calf_raise",
             name: "Calf Raise",
             instructions: "Stand holding a counter or the back of a chair for balance. Rise onto your toes, then lower slowly. That's one rep.",
-            targetReps: 4
+            targetReps: 4,
+            timesPerDay: 1
         )
     ]
 
@@ -54,7 +59,8 @@ enum ExerciseLibrary {
                 name: entry.name,
                 instructions: entry.instructions,
                 targetReps: entry.targetReps,
-                sortOrder: index
+                sortOrder: index,
+                timesPerDay: entry.timesPerDay
             )
             context.insert(exercise)
         }

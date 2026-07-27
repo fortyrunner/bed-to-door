@@ -7,96 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		658C466E86B6C62F4CFC0216 /* BedToDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814687E6A95F5918464CD56B /* BedToDoorApp.swift */; };
-		FC18077569C7E7F04F981591 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057E7702F71F31ED831522EA /* ContentView.swift */; };
-		0BCAEBB09648A1D48766CC10 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE8E73675C9648939D417B /* OnboardingView.swift */; };
-		68B38A3C2A05A9C0BBD603AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9E288BA4FD19FA83D4810 /* HomeView.swift */; };
-		6DAF3D0F6A511BF6B5E5025C /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89007EE903409DE44A4477B3 /* ExercisesView.swift */; };
-		12D5620B052E0B7F1A3F14BB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AAB216FA5464CECBA946C0 /* HistoryView.swift */; };
-		6DD2C148EF4A170ACF101151 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D3A7A18E8F9E272B8E0D2 /* SettingsView.swift */; };
-		D4ECA05677018DE3BCFAD19A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044754DA67B76D4474E3BEF /* UserProfile.swift */; };
-		C5B67AB3E7134EF76C617035 /* StepGoalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */; };
 		0691EE23355706D9F29AAFA6 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E8ACC614366BEF423CECBF /* Exercise.swift */; };
-		EFF61E9CDAC77F4949FB1E08 /* ExerciseLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */; };
+		0BCAEBB09648A1D48766CC10 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFE8E73675C9648939D417B /* OnboardingView.swift */; };
+		12D5620B052E0B7F1A3F14BB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AAB216FA5464CECBA946C0 /* HistoryView.swift */; };
 		1850D9456D26664CE0A777BC /* ExerciseLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43947103A4FED3167BA2CFE9 /* ExerciseLibrary.swift */; };
-		F120D186163EDFB5EF5375FE /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22E61C0D8F7133E93CC650 /* HealthKitManager.swift */; };
 		2ABDA92E6FF1375AC82C1442 /* StepGoalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A5AE52405CEE471D9F1041 /* StepGoalEngine.swift */; };
 		5ACFB4C8753A14B57442C68F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCDC4B61CF04F540504DAD8 /* NotificationManager.swift */; };
-		DA8785DE5A484CE9CAC537C8 /* DailyGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CF1607C37E755D6683533 /* DailyGoalService.swift */; };
+		658C466E86B6C62F4CFC0216 /* BedToDoorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814687E6A95F5918464CD56B /* BedToDoorApp.swift */; };
+		68B38A3C2A05A9C0BBD603AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9E288BA4FD19FA83D4810 /* HomeView.swift */; };
+		6DAF3D0F6A511BF6B5E5025C /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89007EE903409DE44A4477B3 /* ExercisesView.swift */; };
+		6DD2C148EF4A170ACF101151 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D3A7A18E8F9E272B8E0D2 /* SettingsView.swift */; };
 		A6A520C59A3B05686C0C9062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30992204A24E4A3C610116D1 /* Assets.xcassets */; };
+		C5B67AB3E7134EF76C617035 /* StepGoalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */; };
+		D4ECA05677018DE3BCFAD19A /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6044754DA67B76D4474E3BEF /* UserProfile.swift */; };
+		DA8785DE5A484CE9CAC537C8 /* DailyGoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1CF1607C37E755D6683533 /* DailyGoalService.swift */; };
+		EFF61E9CDAC77F4949FB1E08 /* ExerciseLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */; };
+		F120D186163EDFB5EF5375FE /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE22E61C0D8F7133E93CC650 /* HealthKitManager.swift */; };
+		FC18077569C7E7F04F981591 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057E7702F71F31ED831522EA /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		814687E6A95F5918464CD56B /* BedToDoorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedToDoorApp.swift; sourceTree = "<group>"; };
 		057E7702F71F31ED831522EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BFE8E73675C9648939D417B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		35E9E288BA4FD19FA83D4810 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		89007EE903409DE44A4477B3 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
-		80AAB216FA5464CECBA946C0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		2B6D3A7A18E8F9E272B8E0D2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		6044754DA67B76D4474E3BEF /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGoalRecord.swift; sourceTree = "<group>"; };
-		86E8ACC614366BEF423CECBF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogEntry.swift; sourceTree = "<group>"; };
-		43947103A4FED3167BA2CFE9 /* ExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibrary.swift; sourceTree = "<group>"; };
-		AE22E61C0D8F7133E93CC650 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
-		D3A5AE52405CEE471D9F1041 /* StepGoalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGoalEngine.swift; sourceTree = "<group>"; };
-		ADCDC4B61CF04F540504DAD8 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		3A1CF1607C37E755D6683533 /* DailyGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalService.swift; sourceTree = "<group>"; };
 		30992204A24E4A3C610116D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D40843A8173CD1547652654E /* BedToDoor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BedToDoor.entitlements; sourceTree = "<group>"; };
+		35E9E288BA4FD19FA83D4810 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A1CF1607C37E755D6683533 /* DailyGoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalService.swift; sourceTree = "<group>"; };
+		43947103A4FED3167BA2CFE9 /* ExerciseLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLibrary.swift; sourceTree = "<group>"; };
+		6044754DA67B76D4474E3BEF /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogEntry.swift; sourceTree = "<group>"; };
 		67BD0722F12892F2D3A53058 /* BedToDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BedToDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AAB216FA5464CECBA946C0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		814687E6A95F5918464CD56B /* BedToDoorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedToDoorApp.swift; sourceTree = "<group>"; };
+		86E8ACC614366BEF423CECBF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		89007EE903409DE44A4477B3 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		ADCDC4B61CF04F540504DAD8 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		AE22E61C0D8F7133E93CC650 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGoalRecord.swift; sourceTree = "<group>"; };
+		D3A5AE52405CEE471D9F1041 /* StepGoalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepGoalEngine.swift; sourceTree = "<group>"; };
+		D40843A8173CD1547652654E /* BedToDoor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BedToDoor.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		0DEB84CD4F2858FF510582ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		4D35E81CA713EABA77D6A5B1 = {
+		0613E8FDB310E37AC6AFBDE1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C4D32241C75AF4D76940599E /* BedToDoor */,
-				53153B6485BCBCDCF06F3E80 /* Products */,
+				30992204A24E4A3C610116D1 /* Assets.xcassets */,
 			);
-			sourceTree = "<group>";
-		};
-		C4D32241C75AF4D76940599E /* BedToDoor */ = {
-			isa = PBXGroup;
-			children = (
-				A3F31BC7F48493524411B4C4 /* App */,
-				316058697E640C74EE7999A8 /* Models */,
-				07FE8F5A4ECB196F427B8CDB /* Views */,
-				7748236E9C2B73FF115495F1 /* Services */,
-				0613E8FDB310E37AC6AFBDE1 /* Resources */,
-				D40843A8173CD1547652654E /* BedToDoor.entitlements */,
-			);
-			path = BedToDoor;
-			sourceTree = "<group>";
-		};
-		A3F31BC7F48493524411B4C4 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				814687E6A95F5918464CD56B /* BedToDoorApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		316058697E640C74EE7999A8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				6044754DA67B76D4474E3BEF /* UserProfile.swift */,
-				AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */,
-				86E8ACC614366BEF423CECBF /* Exercise.swift */,
-				6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */,
-			);
-			path = Models;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		07FE8F5A4ECB196F427B8CDB /* Views */ = {
@@ -112,6 +70,33 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		316058697E640C74EE7999A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6044754DA67B76D4474E3BEF /* UserProfile.swift */,
+				AE4FDC4CD4762116450F7849 /* StepGoalRecord.swift */,
+				86E8ACC614366BEF423CECBF /* Exercise.swift */,
+				6310D54FBD765EEC0BDF3C69 /* ExerciseLogEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D35E81CA713EABA77D6A5B1 = {
+			isa = PBXGroup;
+			children = (
+				C4D32241C75AF4D76940599E /* BedToDoor */,
+				53153B6485BCBCDCF06F3E80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53153B6485BCBCDCF06F3E80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67BD0722F12892F2D3A53058 /* BedToDoor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7748236E9C2B73FF115495F1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,20 +109,25 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		0613E8FDB310E37AC6AFBDE1 /* Resources */ = {
+		A3F31BC7F48493524411B4C4 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				30992204A24E4A3C610116D1 /* Assets.xcassets */,
+				814687E6A95F5918464CD56B /* BedToDoorApp.swift */,
 			);
-			path = Resources;
+			path = App;
 			sourceTree = "<group>";
 		};
-		53153B6485BCBCDCF06F3E80 /* Products */ = {
+		C4D32241C75AF4D76940599E /* BedToDoor */ = {
 			isa = PBXGroup;
 			children = (
-				67BD0722F12892F2D3A53058 /* BedToDoor.app */,
+				A3F31BC7F48493524411B4C4 /* App */,
+				316058697E640C74EE7999A8 /* Models */,
+				07FE8F5A4ECB196F427B8CDB /* Views */,
+				7748236E9C2B73FF115495F1 /* Services */,
+				0613E8FDB310E37AC6AFBDE1 /* Resources */,
+				D40843A8173CD1547652654E /* BedToDoor.entitlements */,
 			);
-			name = Products;
+			path = BedToDoor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +138,6 @@
 			buildConfigurationList = 0EA7D9E5175DAB2013C578A8 /* Build configuration list for PBXNativeTarget "BedToDoor" */;
 			buildPhases = (
 				B8F0197722ED57784750034C /* Sources */,
-				0DEB84CD4F2858FF510582ED /* Frameworks */,
 				1045093D020BE9097D6E15AB /* Resources */,
 			);
 			buildRules = (
@@ -172,7 +161,7 @@
 					1C6E7247018799B566B8E127 = {
 						CreatedOnToolsVersion = 16.2;
 						SystemCapabilities = {
-							"com.apple.HealthKit" = {
+							com.apple.HealthKit = {
 								enabled = 1;
 							};
 						};
@@ -235,10 +224,62 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0EA93DFDE3F8E5513FBD41D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		1D972354FC5215A189EDE078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -298,64 +339,9 @@
 			};
 			name = Debug;
 		};
-		0EA93DFDE3F8E5513FBD41D2 /* Release */ = {
+		896CD92CCB109C9DE1EC8AF8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				VALIDATE_PRODUCT = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-			};
-			name = Release;
-		};
-		90F65E9C5AA13253C6522BE9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BedToDoor/BedToDoor.entitlements;
@@ -365,6 +351,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "bed to door reads your daily step count from Health so it can track your progress toward your daily goal.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "bed to door can save a manually entered step count to Health for a day you forgot your phone or watch.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -374,8 +361,42 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/BedToDoor/Views";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.bedtodoor";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bedtodoor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		90F65E9C5AA13253C6522BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BedToDoor/BedToDoor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "bed to door reads your daily step count from Health so it can track your progress toward your daily goal.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "bed to door can save a manually entered step count to Health for a day you forgot your phone or watch.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/BedToDoor/Views";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.bedtodoor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -384,50 +405,9 @@
 			};
 			name = Debug;
 		};
-		896CD92CCB109C9DE1EC8AF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BedToDoor/BedToDoor.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "bed to door reads your daily step count from Health so it can track your progress toward your daily goal.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.bedtodoor";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		952E7683C25D81A7067FFEBD /* Build configuration list for PBXProject "BedToDoor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D972354FC5215A189EDE078 /* Debug */,
-				0EA93DFDE3F8E5513FBD41D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0EA7D9E5175DAB2013C578A8 /* Build configuration list for PBXNativeTarget "BedToDoor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -437,8 +417,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		952E7683C25D81A7067FFEBD /* Build configuration list for PBXProject "BedToDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D972354FC5215A189EDE078 /* Debug */,
+				0EA93DFDE3F8E5513FBD41D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
 	};
 	rootObject = EF87B62E123E945C0BFB10D3 /* Project object */;
 }

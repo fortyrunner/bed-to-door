@@ -8,34 +8,59 @@ struct SettingsView: View {
     @StateObject private var healthKit = HealthKitManager.shared
 
     @AppStorage("reminderEnabled") private var reminderEnabled = false
-    @AppStorage("reminderHour") private var reminderHour = 18
-    @AppStorage("reminderMinute") private var reminderMinute = 0
+    @AppStorage("reminderCount") private var reminderCount = 1
+    @AppStorage("reminderStartHour") private var reminderStartHour = 9
+    @AppStorage("reminderEndHour") private var reminderEndHour = 19
 
     @State private var manualGoalText = ""
 
     var body: some View {
         NavigationStack {
             Form {
-                Section("Daily reminder") {
-                    Toggle("Remind me once a day", isOn: $reminderEnabled)
+                Section {
+                    Toggle("Remind me to walk", isOn: $reminderEnabled)
                         .onChange(of: reminderEnabled) { _, enabled in
                             if enabled {
                                 Task {
                                     await NotificationManager.requestAuthorization()
-                                    scheduleReminder()
+                                    scheduleReminders()
                                 }
                             } else {
-                                NotificationManager.cancelDailyReminder()
+                                NotificationManager.cancelAllReminders()
                             }
                         }
+
                     if reminderEnabled {
+                        Stepper(
+                            "\(reminderCount) time\(reminderCount == 1 ? "" : "s") a day",
+                            value: $reminderCount,
+                            in: 1...NotificationManager.maxRemindersPerDay
+                        )
+                        .onChange(of: reminderCount) { _, _ in scheduleReminders() }
+
                         DatePicker(
-                            "Time",
-                            selection: reminderTimeBinding,
+                            "Starting around",
+                            selection: startHourBinding,
                             displayedComponents: .hourAndMinute
                         )
-                        .onChange(of: reminderHour) { _, _ in scheduleReminder() }
-                        .onChange(of: reminderMinute) { _, _ in scheduleReminder() }
+                        .onChange(of: reminderStartHour) { _, _ in scheduleReminders() }
+
+                        if reminderCount > 1 {
+                            DatePicker(
+                                "Ending around",
+                                selection: endHourBinding,
+                                displayedComponents: .hourAndMinute
+                            )
+                            .onChange(of: reminderEndHour) { _, _ in scheduleReminders() }
+                        }
+                    }
+                } header: {
+                    Text("Reminders")
+                } footer: {
+                    if reminderEnabled {
+                        Text(reminderCount == 1
+                             ? "One nudge a day, around the time above."
+                             : "\(reminderCount) nudges, spread evenly between the two times above.")
                     }
                 }
 
@@ -71,27 +96,40 @@ struct SettingsView: View {
         }
     }
 
-    private var reminderTimeBinding: Binding<Date> {
+    private var startHourBinding: Binding<Date> {
         Binding(
             get: {
                 var components = DateComponents()
-                components.hour = reminderHour
-                components.minute = reminderMinute
+                components.hour = reminderStartHour
+                components.minute = 0
                 return Calendar.current.date(from: components) ?? .now
             },
             set: { newValue in
-                let components = Calendar.current.dateComponents([.hour, .minute], from: newValue)
-                reminderHour = components.hour ?? 18
-                reminderMinute = components.minute ?? 0
+                reminderStartHour = Calendar.current.component(.hour, from: newValue)
             }
         )
     }
 
-    private func scheduleReminder() {
-        var components = DateComponents()
-        components.hour = reminderHour
-        components.minute = reminderMinute
-        NotificationManager.scheduleDailyReminder(at: components)
+    private var endHourBinding: Binding<Date> {
+        Binding(
+            get: {
+                var components = DateComponents()
+                components.hour = reminderEndHour
+                components.minute = 0
+                return Calendar.current.date(from: components) ?? .now
+            },
+            set: { newValue in
+                reminderEndHour = Calendar.current.component(.hour, from: newValue)
+            }
+        )
+    }
+
+    private func scheduleReminders() {
+        NotificationManager.scheduleReminders(
+            count: reminderCount,
+            startHour: reminderStartHour,
+            endHour: max(reminderStartHour, reminderEndHour)
+        )
     }
 
     private func updateGoalManually() {
